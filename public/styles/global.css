@@ -60,6 +60,14 @@ body {
     background-color: white;
 }
 
+#skew-hero2 {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    transform: skewY(-3deg) translateY(60px);
+    height: 100px;
+}
+
 #skew-hero1:after {
     transform-origin: right bottom;
     transform: skewY(-3deg);
@@ -69,6 +77,12 @@ body {
     transform-origin: left bottom;
     transform: skewY(2.5deg);
 }
+
+.image-section-skew {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 
 .content {
     font-weight: bold;
@@ -109,7 +123,6 @@ body {
 }
 
 .image-section {
-    margin-top: 10vh;
     background-color: var(--color-content-section);
     min-height: 50vh;
 }
@@ -118,8 +131,6 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
     padding: 2rem;
     background-color: #000000;
 }
