@@ -1,0 +1,33 @@
+<div class="bottom-nav">
+    <a href="/" class="nav-item" id="home">
+        <i class="fas fa-home"></i>
+        <span>Hem</span>
+    </a>
+    <a href="/summon" class="nav-item" id="summon">
+        <i class="fas fa-search"></i>
+        <span>Summon</span>
+    </a>
+    <a href="/collection" class="nav-item" id="collection">
+        <i class="fas fa-user"></i>
+        <span>Collection</span>
+    </a>
+    <a href="/faq" class="nav-item" id="faq">
+        <i class="fas fa-question-circle"></i>
+        <span>Faq</span>
+    </a>
+    <a href="/contact" class="nav-item" id="contact">
+        <i class="fas fa-envelope"></i>
+        <span>Contact</span>
+    </a>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const currentPath = window.location.pathname;
+        document.querySelectorAll(".nav-item").forEach(item => {
+            if (item.getAttribute("href") === currentPath) {
+                item.classList.add("active");
+            }
+        });
+    });
+</script>
