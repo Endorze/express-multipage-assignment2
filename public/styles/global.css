@@ -239,3 +239,32 @@ body {
     transition: all .3s ease;
     text-align: justify;
 }
+
+.footer-wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.company img {
+    width: 100px;
+}
+
+.browse,
+.services,
+.contact,
+.company {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
