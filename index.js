@@ -24,6 +24,7 @@ app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
     res.render("pages/home", {
+        bodyClass: "home-body",
         pageTitle: "Home",
     })
 });
