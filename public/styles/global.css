@@ -239,3 +239,56 @@ body {
     transition: all .3s ease;
     text-align: justify;
 }
+
+.footer-wrapper {
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.company img {
+    width: 100px;
+}
+
+.browse,
+.services,
+.contact,
+.company {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.footer-wrapper a, p {
+    text-decoration: none;
+    color: rgb(138, 130, 130);
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    align-items: center;
+}
+
+.copyright a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.copyright p {
+    margin-left: 15px;
+}
+
+.contact img {
+    width: 25px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.contact div {
+    display: flex;
+}
+
