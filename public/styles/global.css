@@ -16,7 +16,7 @@ body {
 }
 
 .home-body {
-    background-color: white;
+    background-color: black;
     overflow-x: hidden;
 }
 
@@ -252,7 +252,7 @@ body {
 }
 
 .footer-wrapper {
-    background-color: white;
+    background-color: rgb(27, 27, 27);
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
@@ -273,7 +273,11 @@ body {
 
 .footer-wrapper a, p {
     text-decoration: none;
-    color: rgb(138, 130, 130);
+    color: rgb(185, 185, 185);
+}
+
+.footer-wrapper h3 {
+    color: rgb(185, 185, 185);
 }
 
 .copyright {
@@ -281,7 +285,7 @@ body {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: rgb(29, 29, 29);
     align-items: center;
     overflow: hidden;
 }
@@ -289,6 +293,7 @@ body {
 .copyright a {
     margin-right: 15px;
     text-decoration: none;
+    color: rgb(185, 185, 185);
 }
 
 .copyright p {
