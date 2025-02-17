@@ -140,15 +140,20 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: auto;
-    padding: 40px 80px;
+    padding: 0px 80px;
     max-width: 1000px;
     text-align: left;
+}
+
+.download-section img {
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
 }
 
 .faq-section {
     padding: 50px 20px;
     display: flex;
     justify-content: center;
+    background-color: var(--gray-section-background);
 }
 
 .faq-container {
