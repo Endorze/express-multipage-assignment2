@@ -1,0 +1,27 @@
+.faq-body {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: red;
+}
+
+.center-content h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.center-content p {
+    margin-top: 5px !important;
+}
+
+.center-content img {
+    width: 40px;
+}
