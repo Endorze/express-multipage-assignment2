@@ -1,7 +1,12 @@
-.faq-body {
-    min-height: 150vh;
+/* .faq-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    min-height: 100vh;
     flex-direction: column;
+    background-image: url("./image/faqPage/banner.jpg");
 }
 
 .center-content {
@@ -9,8 +14,6 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
-    background-color: red;
 }
 
 .center-content h2, p {
@@ -24,4 +27,219 @@
 
 .center-content img {
     width: 40px;
+    margin-bottom: 20px;
+}
+
+.faq-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.faq-container {
+    background: white;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-content {
+    margin-top: 50px;
+    min-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    max-width: 700px;
+    width: 100%;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.faq-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--answer-faq-color);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+
+@media screen and (max-width: 768px) {
+    .faq-content {
+        max-width: 300px;
+    }
+} */
+
+
+.faq-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+}
+
+.center-content h2, 
+.center-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.center-content p {
+    margin-top: 5px !important;
+}
+
+.center-content img {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.download-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 40px 80px;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.faq-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-container {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-content {
+    margin-top: 30px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.faq-icon {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--answer-faq-color);
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* --- MOBILANPASSNING --- */
+@media screen and (max-width: 768px) {
+
+    .faq-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .faq-content {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .faq-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+    }
+
+    .download-section {
+        display: none;
+    }
 }

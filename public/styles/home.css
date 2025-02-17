@@ -237,5 +237,9 @@
     .grid-container-5 {
         grid-area: auto;
     }
+
+    #skew-hero2 {
+        transform: skewY(-3deg) translateY(10px);
+    }
 }
 
