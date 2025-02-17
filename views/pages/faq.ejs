@@ -3,7 +3,44 @@
 <%- include("../partials/head.ejs")%>
 <body class="<%= bodyClass %>">
     <%- include("../partials/header.ejs")%>
-    <%- include("../partials/faqSection.ejs")%>
+    <div class="faq-section">
+        <%- include("../partials/faqSection.ejs")%>
+        <div class="faq-content">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do I schedule a design consultation with Carlex Corporation?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    You can schedule a consultation by contacting us either by phone/email or visit us at our physical location.
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What types of design services does Carlex Corporation offer?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    We offer personalized design solutions, meticulous attention to detail, and innovative approaches.
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can Carlex Corporation help with both residential and commercial design projects?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, we handle both residential and commercial projects.
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("../partials/downloadSection.ejs")%>
+    </div>
+
+<script src="/scripts/script.js"></script>
     <%- include("../partials/footer.ejs")%>
     <%- include("../partials/bottomNavigationBar.ejs")%>
 </body>
