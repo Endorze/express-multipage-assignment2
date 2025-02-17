@@ -5,6 +5,9 @@
         <%= pageTitle %>
     </title>
     <link rel="stylesheet" href="/styles/global.css">
+    <% if (!cssPath) %>
+    <% console.log(cssPath) %>
+    <link rel="stylesheet" href="<%= cssPath %>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link

@@ -25,6 +25,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
     res.render("pages/home", {
         bodyClass: "home-body",
+        cssPath: "/styles/home.css",
         pageTitle: "Home",
     })
 });
@@ -33,6 +34,7 @@ app.use("/", homeRouter);
 app.use("/collection", collectionRouter);
 app.use("/contact", contactRouter);
 app.use("/summon", summonRouter);
+
 app.use("/faq", faqRouter);
 
 
