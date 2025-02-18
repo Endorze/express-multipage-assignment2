@@ -3,6 +3,7 @@
     gap: 50px;
     padding: 50px;
     justify-content: center;
+    min-height: 50vh;
 }
 
 .display-horizontal {
@@ -94,6 +95,7 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        padding: 10px;
         max-width: 600px;
     }
 
