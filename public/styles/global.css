@@ -7,6 +7,10 @@
     --gray-section-background: rgb(245, 245, 245);
 }
 
+img {
+    display: block;
+}
+
 body {
     font-family: var(--font-family);
     margin: 0;
