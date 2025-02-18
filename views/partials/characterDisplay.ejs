@@ -1,0 +1,28 @@
+<div class="character-display-background" style="background-image: url('<%= bgImgPath %>'); background-position: center; background-size: cover; background-repeat: no-repeat;">
+    <% if (hero) { %>
+    <div class="display-horizontal">
+        <div>
+            <img id="hero-img" src="<%= hero.imgPath %>" alt="<%= hero.heroName %>">
+        </div>
+        <div id="stats-wrapper">
+            <h2>MAX LVL</h2>
+            <p>Name: <%= hero.heroName %></p>
+            <p>Rank: <%= hero.grade %></p>
+            <p>Type: <%= hero.stanceType %></p>
+            <p>Health: <%= hero.health %></p>
+            <p>Attack: <%= hero.attack %></p>
+            <p>Defence: <%= hero.defence %></p>
+            <p>Speed: <%= hero.speed %></p>
+            <p>Awakened: <%= hero.awakenBonus %></p>
+        </div>
+    </div>
+        <% } %>
+
+    <div class="character-icons">
+        <% characters.forEach(hero=> { %>
+        <a href="/collection/<%= hero.heroName %>">
+        <img class="character-icon" src="<%= hero.iconPath %>" alt="<%= hero.heroName %>">
+        </a>
+        <% }) %>
+    </div>
+</div>
