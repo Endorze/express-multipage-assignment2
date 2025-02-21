@@ -1,23 +1,21 @@
 .character-display-background {
     display: flex;
     gap: 50px;
-    padding: 50px;
+    padding: 25px;
     justify-content: center;
     min-height: 50vh;
 }
 
 .display-horizontal {
     display: flex;
-    padding: 50px;
+    padding: 25px;
     max-width: 900px;
     gap: 20px;
-    background-color: rgba(194, 194, 194, 0.849);
     justify-content: center;
-    background-image: url("/image/collectionPage/celestial.webp");
+    background-image: url("https://t4.ftcdn.net/jpg/04/33/16/71/360_F_433167186_bnAhGZ4fANlmExoSXw4EagCsfVbmAPIc.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 20px;
 }
 
 .character-container {
@@ -33,22 +31,20 @@
 .character-icons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 5px;
     flex-wrap: wrap;
     max-width: 500px;
 }
 
 #stats-wrapper {
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: #fff;
     padding: 50px;
-    border-radius: 20px;
 }
 
 .character-icon {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border: 5px solid black;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 
@@ -56,9 +52,8 @@
 
 #hero-img {
     width: 400px;
-    height: 500px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 20px;
 } 
 
 .character-icon:hover {

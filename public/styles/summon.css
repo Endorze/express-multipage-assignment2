@@ -94,7 +94,7 @@
 .button-style {
     color: #fff;
     text-decoration: none;
-    background: #039dc8;
+    background: var(--button-color);
     display: inline-block;
     font-size: 16px;
     padding: 10px 25px;
@@ -102,7 +102,7 @@
 }
 
 .event-div2 a:hover, .event-div4 a:hover {
-    background: #04b7e9;
+    background: var(--button-hover-color);
 }   
 
 @media screen and (max-width: 1200px) {

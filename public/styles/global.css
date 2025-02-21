@@ -7,6 +7,8 @@
     --gray-section-background: rgb(245, 245, 245);
     --section-max-width: 1400px;
     --faq-page-max-width: 1150px;
+    --button-color: #039dc8;
+    --button-hover-color: #04b7e9;
 }
 
 img {
@@ -52,9 +54,6 @@ html {
     display: flex;
     justify-content: space-evenly;
     padding: 1%;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 0px var(--header-shadow) var(--header-shadow) calc(var(--header-shadow)*-1) rgba(0,0,0,1);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     z-index: 1;
 }
 
@@ -242,6 +241,11 @@ html {
         align-items: center;
         text-align: center;
         padding: 20px;
+    }
+
+    .footer-wrapper a {
+        display: flex;
+        justify-content: center;
     }
 
     .browse,
