@@ -3,10 +3,10 @@
         <a href="/"><img src="/image/websitelogo.png"></a>
     </div>
     <div class="anchor-wrapper">
-        <a href="/">Home</a>
-        <a href="/collection">Our collection</a>
-        <a href="/summon">How to summon</a>
-        <a href="/faq">Faq</a>
-        <a href="/contact">Contact us</a>
+        <a href="/" class="<%= currentPath === '/' ? 'active' : '' %>">Home</a>
+        <a href="/collection" class="<%= currentPath === '/collection' ? 'active' : '' %>">Our collection</a>
+        <a href="/summon" class="<%= currentPath === '/summon' ? 'active' : '' %>">How to summon</a>
+        <a href="/faq" class="<%= currentPath === '/faq' ? 'active' : '' %>">Faq</a>
+        <a href="/contact" class="<%= currentPath === '/contact' ? 'active' : '' %>">Contact us</a>
     </div>
 </div>

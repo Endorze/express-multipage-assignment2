@@ -69,7 +69,44 @@ html {
     justify-content: space-between;
     min-width: 600px;
     align-items: center;
+    position: relative;
+    padding-bottom: 5px;
 }
+
+.anchor-wrapper a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.anchor-wrapper a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--button-hover-color);;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.anchor-wrapper a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.anchor-wrapper a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+.anchor-wrapper a.active {
+    color: var(--button-hover-color);; 
+    font-weight: bold;
+}
+
 
 
 .footer-wrapper {
@@ -155,7 +192,7 @@ html {
     transition: color 0.3s;
 }
 .nav-item.active {
-    color: #007bff;
+    color: var(--button-hover-color);
 }
 .nav-item i {
     font-size: 24px;

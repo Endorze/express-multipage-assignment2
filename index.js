@@ -22,6 +22,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.set("view engine", "ejs");
 
+app.use((req, res, next) => {
+    res.locals.currentPath = req.path;
+    next();
+});
+
 app.get("/", (req, res) => {
     res.render("pages/home", {
         bodyClass: "home-body",

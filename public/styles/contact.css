@@ -1,5 +1,5 @@
 .contact-section {
-    background-image: url("https://img.freepik.com/free-vector/blue-gradient-background-illustration_53876-116696.jpg");
+    background-image: url("/image/contactpagebackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -76,6 +76,10 @@
     .navigation-item-wrapper {
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
     }
     
     .navigation-item {
