@@ -9,7 +9,6 @@ collectionRouter.get("/", (req, res) => {
         cssPath: "/styles/collection.css",
         characters: characterList,
         hero: null,
-        bgImgPath: "https://hive-fn.qpyou.cn/markup/img/brand/chronicles/video/bg_intro_3.jpg"
     });
 });
 
@@ -26,7 +25,6 @@ collectionRouter.get("/:heroName", (req, res) => {
         cssPath: "/styles/collection.css",
         characters: characterList, 
         hero,
-        bgImgPath: "https://hive-fn.qpyou.cn/markup/img/brand/chronicles/video/bg_intro_3.jpg"
     });
 });
 

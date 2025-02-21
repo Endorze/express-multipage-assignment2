@@ -4,6 +4,8 @@
     padding: 25px;
     justify-content: center;
     min-height: 50vh;
+    align-items: center;
+    margin-top: auto;
 }
 
 .display-horizontal {
@@ -15,6 +17,13 @@
     background-image: url("/image/backgrounddarkblue.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-collection {
+    background-image: url("/image/summonerbackground.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
 }
 
