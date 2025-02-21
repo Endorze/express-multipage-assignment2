@@ -41,11 +41,15 @@
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
     text-align: center;
     padding: 150px 50px;
     overflow: hidden;
     height: 70vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h2 {
@@ -76,10 +80,12 @@
     font-size: 16px;
     padding: 10px 25px;
     margin-top: 20px;
+    max-width: 200px;
+    width: 100%;
 }
 
 .content a:hover {
-    background: var(--color-hover-button);
+    background: var(--button-hover-color);
 }
 
 .image-section {
